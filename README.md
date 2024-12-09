@@ -23,4 +23,14 @@ This will set the name of our server. Having such a simple name will allow us to
 > Note: You can make sure the changes were made after the restart by doing what we did in the beginning. You go to File Explorer, you right-click on This Pc and click on Properties. Under Computer Name, Domain, and Workgroup settings, you should see that now the Computer Name is Server2016.
 
 ## Adjusting Server for Best Performance
-Under the Computer Name, Domain, and Workgroup settings, we will click on "Change Settings", the same shield icon we clicked to change the name of the server. But now, under System Properties, we will click on Advanced.
+Under the Computer Name, Domain, and Workgroup settings, we will click on "Change Settings", the same shield icon we clicked to change the name of the server. But now, under System Properties, we will click on Advanced. We are looking for the Performance settings. 
+
+<img src="https://i.ibb.co/0qvqTwR/8-performance-settings.png">
+
+This will take us to a screen called "Performance Options". Here, under "visual effects", we will click "Adjust for Best Performance". This will help so that the virtual environment runs as smooth as possible. 
+
+<img src="https://i.ibb.co/2NtG18y/9-adjust-for-best-performance.png">
+
+Once that is done, we could close everything. 
+
+
