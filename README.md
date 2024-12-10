@@ -33,4 +33,14 @@ This will take us to a screen called "Performance Options". Here, under "visual 
 
 Once that is done, we could close everything. 
 
+## Installing Active Directory
+
+Press the Windows key, and open "Server Manager". Then, under the "Manage" tab, click "Add Roles and Features". 
+
+<img src="https://i.ibb.co/4Zdry53/12-manage-add-roles-and-features.png">
+
+The Add Roles and Features Startup Wizard pops up. This is just a fancy name for a tool that will help us install Active Directory. On this screen, it shows a list of prerequisites that you need to verify before continuing. On an actual server environment, do verify this. But, for our environment, everything is fine. You can click next. 
+
+
+
 
