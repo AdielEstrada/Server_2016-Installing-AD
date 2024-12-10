@@ -41,6 +41,8 @@ Press the Windows key, and open "Server Manager". Then, under the "Manage" tab, 
 
 The Add Roles and Features Startup Wizard pops up. This is just a fancy name for a tool that will help us install Active Directory. On this screen, it shows a list of prerequisites that you need to verify before continuing. On an actual server environment, do verify this. But, for our environment, everything is fine. You can click next. 
 
+<img src="https://i.ibb.co/LJMKYs9/13-next.png">
+
 
 
 
