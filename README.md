@@ -39,10 +39,29 @@ Press the Windows key, and open "Server Manager". Then, under the "Manage" tab, 
 
 <img src="https://i.ibb.co/4Zdry53/12-manage-add-roles-and-features.png">
 
-The Add Roles and Features Startup Wizard pops up. This is just a fancy name for a tool that will help us install Active Directory. On this screen, it shows a list of prerequisites that you need to verify before continuing. On an actual server environment, do verify this. But, for our environment, everything is fine. You can click next. 
+The Add Roles and Features Wizard pops up. This is just a fancy name for a tool that will help us install Active Directory. On this screen, it shows a list of prerequisites that you need to verify before continuing. On an actual server environment, do verify this. But, for our environment, everything is fine. You can click next. 
 
 <img src="https://i.ibb.co/LJMKYs9/13-next.png">
 
+Then, it will prompt you to select an installation type. There is two options available: "Role-based or feature-based installation", and "Remote Desktop Services installation". Role-based installation allows you to set up the features you want to download on your server environment. For now, we don't have to worry about Remote Desktop Services, so we will just make sure that we have selected a Role-based installation. Then we click next. 
 
+<img src="https://i.ibb.co/QdJt8Qn/14-select-installation-type.png">
 
+From there, it will ask you to select a destination server. Make sure Server 2016 is selected (or whatever you named your project). Click next.
+
+<img src="https://i.ibb.co/YpKn8q5/15-select-destination-server.png">
+
+Then, we are asked to select the roles we want to add. Look for and click on "Active Directory Domain Services". You will notice that a pop-up will appear asking you to confirm whether you want a suite of features to be added that are required for Active Directory Domain Services. We need these services, so click on "Add Features". 
+
+<img src="https://i.ibb.co/G01zjZS/16-Active-directory-domain-services.png">
+
+Make sure Group Policy Management is selected. Then, we can click next. A screen that is titled "Active Directory Domain Services" will pop-up. It will list a few of the next steps you need to take to install Active Directory. We can click next. 
+
+<img src="https://i.ibb.co/WH3Q0gZ/18-next.png">
+
+A summary of the feaatures to be installed will be displayed on the screen. Once you're shure those are the features you want to install, click Install. A progress bar will appear. Once the progress bar is filled up, an option will appear that says, "Promote this server to a domain controller". Click on that option.
+
+<img src="https://i.ibb.co/7NX9nT1/21-promote-this-to-a-domain-controller.png">
+
+A deployment configuration will pop up. There are 3 deployment options: "Add a domain controller to an existing domain", "Add a new domain to an existing forest", and "Add a new forest". 
 
