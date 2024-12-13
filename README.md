@@ -69,4 +69,8 @@ Then, it will ask you to specify the domain information. In the real world, we n
 
 <img src="https://i.ibb.co/yXn0Fcr/22-add-a-new-forest.png"> 
 
-The Domain Controller Options Window will appear. Here, we will only focus on creating a recovery password. Make sure you don't lose it! So, where it asks you to type the DSRM password, create a password. Usually, this would be a strong password. But, for ease of use in this project, you can choose a simple password. Type it in and click next. 
+The Domain Controller Options Window will appear. Here, we will only focus on creating a recovery password. Make sure you don't lose it! So, where it asks you to type the DSRM password, create a password. Usually, this would be a strong password. But, for ease of use in this project, you can choose a simple password. Type it in and click next.
+
+<img src="https://i.ibb.co/7yXwf4R/23-create-password.png">
+
+Then, a DNS options screen will appear. We don't need to do anything with this. So, we can click next. For the next screen, you just need to let the "NETBIOS name" appear. In my case, what appeared was "ADIELIT". We can move along the next screens without doing anything until we reach a screen titled "Prerequisite
