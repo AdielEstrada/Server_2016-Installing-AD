@@ -1,20 +1,20 @@
 # Part 2 - Installing Active Directory and Renaming Server Environment
 
 > [!NOTE]
-> You should be logged in as an administrator on your Server 2016 VM before starting this part of the project. You set it up in the previous page.
+> You should be logged in as an administrator on your Server 2016 VM before starting this part of the project. You set it up in the previous page (Part 1).
 
 ## Renaming Server Environment
-The first step is openning File Explorer (1). You right-click on "This PC" (2), and click "Properties" (3).
+The first step is opening File Explorer (1). You right-click on "This PC" (2), and click "Properties" (3).
 
 <img src="https://i.ibb.co/ZSPcf86/1.png">
 
-> Note: Another way of accessing this panel is going to the search icon, and searching c:. Then you right-click "This PC" and so on. In fact, for this lab, this is what I did. However, openning File Explorer should give you the same results and involves less steps in my opinion.
+> Note: Another way of accessing this panel is going to the search icon, and searching c:. Then you right-click "This PC" and so on. In fact, for this lab, this is what I did. However, opening File Explorer should give you the same results and involves less steps in my opinion.
 
- After we click on properties, Control Panel will pop-up. Where it says "Computer Name, domain, and workgroup settings", click on the shield Icon that says "Change Settings". A pop-up called "System Properties" will appear. We want to click on the box that says "Change", as shown. 
+After we click on properties, Control Panel will pop-up. Where it says "Computer Name, domain, and workgroup settings", click on the shield Icon that says "Change Settings". A pop-up called "System Properties" will appear. We want to click on the box that says "Change", as shown. 
 
  <img src="https://i.ibb.co/BjLhcrH/1-1.png">
 
- A "Computer Name/Domain Changes" Screen will pop-up. Under "Computer Name", type "Server2016". Click ok, and accept the restart that it will ask of you.
+ A "Computer Name/Domain Changes" screen will pop-up. Under "Computer Name", type "Server2016". Click ok, and accept the restart that it will ask of you.
  
 <img src="https://i.ibb.co/2y0YfCg/4-change-computer-name.png">
 
@@ -27,7 +27,7 @@ Under the Computer Name, Domain, and Workgroup settings, we will click on "Chang
 
 <img src="https://i.ibb.co/0qvqTwR/8-performance-settings.png">
 
-This will take us to a screen called "Performance Options". Here, under "visual effects", we will click "Adjust for Best Performance". This will help so that the virtual environment runs as smooth as possible. 
+This will take us to a screen called "Performance Options". Here, under "Visual Effects", we will click "Adjust for Best Performance". This will help so that the virtual environment runs as smooth as possible. 
 
 <img src="https://i.ibb.co/2NtG18y/9-adjust-for-best-performance.png">
 
@@ -39,7 +39,7 @@ Press the Windows key, and open "Server Manager". Then, under the "Manage" tab, 
 
 <img src="https://i.ibb.co/4Zdry53/12-manage-add-roles-and-features.png">
 
-The Add Roles and Features Wizard pops up. This is just a fancy name for a tool that will help us install Active Directory. On this screen, it shows a list of prerequisites that you need to verify before continuing. On an actual server environment, do verify this. But, for our environment, everything is fine. You can click next. 
+The Add Roles and Features Wizard pops up. This is just a fancy name for a tool that will help us install Active Directory. On this screen, it shows a list of pre-requisites that you need to verify before continuing. On an actual server environment, do verify this. But, for our environment, everything is fine. You can click next. 
 
 <img src="https://i.ibb.co/LJMKYs9/13-next.png">
 
@@ -59,9 +59,14 @@ Make sure Group Policy Management is selected. Then, we can click next. A screen
 
 <img src="https://i.ibb.co/WH3Q0gZ/18-next.png">
 
-A summary of the feaatures to be installed will be displayed on the screen. Once you're shure those are the features you want to install, click Install. A progress bar will appear. Once the progress bar is filled up, an option will appear that says, "Promote this server to a domain controller". Click on that option.
+A summary of the feaatures to be installed will be displayed on the screen. Once you're sure those are the features you want to install, click "Install". A progress bar will appear. Once the progress bar is filled up, an option will appear that says, "Promote this server to a domain controller". Click on that option.
 
 <img src="https://i.ibb.co/7NX9nT1/21-promote-this-to-a-domain-controller.png">
 
-A deployment configuration will pop up. There are 3 deployment options: "Add a domain controller to an existing domain", "Add a new domain to an existing forest", and "Add a new forest". 
+A deployment configuration screen will pop up. There are 3 deployment options: "Add a domain controller to an existing domain", "Add a new domain to an existing forest", and "Add a new forest". To understand this, a forest is the highest level of organization possible in Active Directory. In our situation, we don't have a forest, so we will need to create one. Click on "Add a new forest". 
 
+Then, it will ask you to specify the domain information. In the real world, we need to be careful with the name we choose, since it could confilct with other domain names. But, since this is just for a lab environment, the name we choose doesn't matter, as long as it ends with ".com", ".local", or something similar. For this instance, I chose the name "adielit.local". Where it says "Root Domain Name", you can write the name for the domain. Click next.
+
+<img src="https://i.ibb.co/yXn0Fcr/22-add-a-new-forest.png"> 
+
+The Domain Controller Options Window will appear. Here, we will only focus on creating a recovery password. Make sure you don't lose it! So, where it asks you to type the DSRM password, create a password. Usually, this would be a strong password. But, for ease of use in this project, you can choose a simple password. Type it in and click next. 
