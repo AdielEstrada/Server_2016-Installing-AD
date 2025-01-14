@@ -77,4 +77,8 @@ Then, a DNS options screen will appear. We don't need to do anything with this. 
 
 <img src="https://i.ibb.co/dtLmHyC/29-prerequisites-check-passed.png">
 
+You will then be prompted to restart the server. This is normal, as you will be adding a new feature to the server. Let it do its thing, and follow any prompts if needed. After the computer restarts, you can log in. Pay attention to where it says "Sign in to:" and where the domain name is displayed. This is a common sign and a way to identify a computer that is added to a domain. 
 
+<img src="https://i.ibb.co/NrrMtKg/31-Checking-for-domain.png">
+
+After you log in, you can verify that Active Directory has been downloaded by going to the tools tab of Server Manager. If the tool is installed properly, you should see some options that mention something about Active Directory. Once you've done that, you have installed active directory. 
