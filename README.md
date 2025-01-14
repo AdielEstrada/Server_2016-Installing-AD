@@ -73,4 +73,8 @@ The Domain Controller Options Window will appear. Here, we will only focus on cr
 
 <img src="https://i.ibb.co/7yXwf4R/23-create-password.png">
 
-Then, a DNS options screen will appear. We don't need to do anything with this. So, we can click next. For the next screen, you just need to let the "NETBIOS name" appear. In my case, what appeared was "ADIELIT". We can move along the next screens without doing anything until we reach a screen titled "Prerequisite
+Then, a DNS options screen will appear. We don't need to do anything with this. So, we can click next. For the next screen, you just need to let the "NETBIOS name" appear. In my case, what appeared was "ADIELIT". We can move along the next screens without doing anything until we reach a screen titled "Prerequisites Check". Eventually, on the box inside the window, lots of warnings will appear. We can ignore those and click install. 
+
+<img src="https://i.ibb.co/dtLmHyC/29-prerequisites-check-passed.png">
+
+
